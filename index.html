@@ -5,19 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        // Ambil path setelah "/xvideos/"
+        // Ambil bagian path setelah domain
         let path = window.location.pathname;
-        let basePath = "/xvideos/";
         
-        if (path.startsWith(basePath)) {
-            let extraPath = path.substring(basePath.length); // Ambil bagian setelah /xvideos/
-            
-            // Domain tujuan tetap ke home page
-            let targetDomain = "https://www.pornhub.com";
-            
-            // Redirect langsung ke home page tanpa path tambahan
-            window.location.href = targetDomain;
-        }
+        // Domain tujuan tetap ke home page
+        let targetDomain = "https://www.pornhub.com";
+        
+        // Redirect langsung ke home page tanpa memperhitungkan path
+        window.location.href = targetDomain;
     </script>
 </head>
 <body>
